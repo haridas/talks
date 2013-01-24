@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+                <h1 style="font-size:95px"> An Introduction to Python and its Scope</h1>
+					<p>
+                        <small>Created by 
+                            <a href="http://haridas.in">Haridas N</a> / 
+                            <a href="http://twitter.com/haridas_n">@haridas_n</a> /
+                            <a href="http://haridas.in">http://haridas.in</a>
+                        </small>
+					</p>
+				</section>
+
+                <section>
+                    <h3> Python - A general purpose language </h3>
+                    <ol>
+                        <li> Multi paradigm support </li>
+                        <li> Dynamic type system </li>
+                        <li> Everything in Python is an Object </li>
+                        <li> Python Byte Code </li>
+                    </ol>
+
+                </section>
+                <section>
+                    <h3> Other Language features </h3>
+                    <ul>
+                        <li> Very readable code ( Like pseudo code ) </li>
+                        <li> Indentation </li>
+                        <li> Duck typing </li>
+                        <li> Meta Programming </li>
+                    <ul>
+                </section>
+
+                <section>
+                    <h3> Difference from other similar Languages  </h3>
+                    <ul>
+                        <li> Programmers are forced to write readable and good code </li>
+                        <li> Rich set of standard library </li>
+                        <li> Availability of 3'rd party packages, and Frameworks </li>
+                        <li> Maintainability </li>
+                    <ul>
+                </section>
+
+                <section>
+                    <h3> Scope of Python Language. </h3>
+                    <ul>
+                        <li> A good prototype language </li>
+                        <li> Productivity, Maintainability makes python suitable for startups.  </li>
+                        <li> Speed of the Language is more than enough for most of the use cases.</li>
+                        <li> Scipy,Numpy, Math libraries and similar packages make it ideal platform for researchers and students </li>
+                        <li> Desktop Application development (WxPython, PyQt) - Dropbox using python for their client development </li>
+                    </ul>
+                </section>
+
+				<section>
+                <h2>Python in Real life</h2>
+				</section>
+
+				<section>
+                <h2>Python in Real life </h2>
+                    <ol>
+                        <li> Companies like Google, NASA, Dropbox, Disqus, etc.</li>
+                        <li> Startups </li>
+                        <li> Without any much work, Python is suitable to meet requirements of Small and Medium Business needs </li>
+                        <li> Researchers, Data Scientists, Students </li>
+                        <li> Lot of companies using Python as a glue language and testing framework. </li>
+                    </ol>
+				</section>
+
+				<section>
+                    <section >
+                        <h2> Challenges</h2>
+                    </section>
+
+                    <section>
+                        <h2> Performance and Language Speed. </h2>
+                        <h2> Is it really matters ? </h2>
+                    </section>
+
+                    <section>
+                        <h2 style="font-size:70px"> No. Python has enough speed to meet Most of the uses cases. </h2>
+                    </section>
+
+                    <section>
+                        <h2 style="font-size:71px"> But if we need better performance, what we will do ? </h2>
+                        <ul>
+                            <li> Know more about language, and use standard libraries available to improve the performance. eg; itertools, operator, etc. </li>
+                            <li> Use Multi Processor package. The Threading module is not much useful.</li> 
+                            <li> Based on the application ( Web based or others ), pick good set of tools. eg; Database, Caching system, etc.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2> But if we need better performance, what we will do ? </h2>
+                        <ul>
+                            <li> Asynchronous libraries - Twisted, Tornado, Gevent, etc.</li>
+                            <li> Pypy -- A good step towards JIT compiled Python Bytecode </li>
+                            <li> Use Python C-APIs and write code in C and use it with python </li>
+                            <li> There are several tools available to write code in Python and generate its C code. eg; Cython. </li>
+                        </ul>
+
+                    </section>
+
+                    <section>
+
+                        <h2> Python-3.x is not 100% compatible with Python-2.x </h2>
+                        <ul>
+                            <li> Small Changes in the Language syntax.</li>
+                            <li> eg; <code> print </code> is a statement in python-2.x, but in python-3.x it's a normal build-in function. </li> 
+                            
+                            <pre> on Python-2.x<code> print "Hello World" </code> </pre> 
+                            <pre> on Python-3.x <code> print("Hello World") </code> </pre>  
+                            </li>
+                        </ul>
+
+                    </section>
+                    <section>
+                        <h2> Python-3.x is not 100% compatible with Python-2.x </h2>
+                        <ul>
+                            <li> Lot of memory optimization for different operations like, file read, dict - keys(), values() functions etc. are by default returns an iterator </li>
+                            <li> No need to worry, obviously the changes and optimizations makes python-3.x better than python-2.x. 
+                            </li>
+
+                            <li>
+                                Python-2.7.x in cooperate lot of python3 features to make the migration easy. So the beginners can start from python-2.7.x.
+                            </li>
+
+                        </ul>
+                    </section>
+
+				</section>
+
+				<section>
+                    <h2>Summary</h2>
+                    <ul>
+                        <li> Learn to program well, and understand the OS as much as possible </li>
+                        <li> Python-3.x support is now available for main packages like Django, NumPy, ScyPy, and lot of other 3'rd party packages. </li>
+
+                        <li> Lot of startups are interested in Python.</li>
+                    </ul>
+				</section>
+
+                <section>
+                    Questions
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'default' , // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
